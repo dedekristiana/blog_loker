@@ -1,8 +1,8 @@
 import Layout from "./Layout";
 import { useState } from "react";
-import ProductCard from "./ProductCard";
 import articles from "../services/article";
 import categories from "../services/category";
+import InfoPost from "./InfoPost";
 
 const Home = () => {
   const [article, setArticle] = useState(articles);
@@ -45,7 +45,7 @@ const Home = () => {
       <div className="flex flex-wrap mt-10">
         {/* looping article */}
         {article.map((item, index) => {
-          return <ProductCard item={item} />;
+          return <InfoPost item={item} />;
         })}
       </div>
     </Layout>

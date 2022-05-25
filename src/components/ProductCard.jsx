@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const ProductCard = ({ item }) => {
   return (
@@ -16,11 +16,11 @@ const ProductCard = ({ item }) => {
           <span> &bull;</span>
           <div className="">{item.date}</div>
         </div>
-        <Link to={item.title}>
-          <h2 className="text-2xl mt-4">{item.title}</h2>
-        </Link>
+
+        <h2 className="text-2xl mt-4">{item.title}</h2>
 
         <p className="text-white/60 mt-4">{item.shortDescription}</p>
+        <p className="text-white/60 mt-4">{item.description}</p>
       </div>
     </div>
   );
